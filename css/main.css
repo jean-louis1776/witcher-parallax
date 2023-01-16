@@ -4,10 +4,19 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "mason-regular";
+  src: url("../fonts/masonchronicles.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
 html,
 body {
   height: 100%;
   background-color: #000;
+  color: #fff;
+  font-family: mason-regular, sans-serif;
 }
 
 .slider {
@@ -37,6 +46,49 @@ body {
 .slider__wrapper {
   will-change: transform;
   transform-style: preserve-3d;
+}
+
+.slider__logo {
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.slider__logo_top {
+  margin-bottom: 2rem;
+}
+
+.slider__logo_top,
+.slider__logo_middle,
+.slider__logo_bottom {
+  will-change: transform;
+}
+
+.slider__logo_top img {
+  width: 50%;
+}
+
+.slider__logo_middle img {
+  width: 80%;
+}
+
+.scroll__text {
+  font-size: 2rem;
+  user-select: none;
+}
+
+.cdproject__logo {
+  width: 60%;
+}
+
+.showcase__video {
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
 }
 
 .soundbutton {

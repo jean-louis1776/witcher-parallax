@@ -6,8 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css" />
+    <link
+      href="https://www.dafontfree.net/embed/bWFzb24tcmVndWxhciZkYXRhLzI2L20vMTMzOTA5L0NyZWVkLnR0Zg"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="libs/swiper/swiper-bundle.min.js" defer></script>
     <script src="libs/particles/particles.js" defer></script>
+    <script src="libs/scrollreveal.min.js" defer></script>
     <link rel="stylesheet" href="css/main.css" />
     <script src="js/app.js" defer></script>
     <title>The Witcher | Parallax</title>
@@ -15,6 +21,27 @@
   <body>
     <div class="swiper slider">
       <div class="swiper-wrapper slider__wrapper">
+        <div class="swiper-slide slider__item">
+          <div class="slider__logo">
+            <canvas
+              class="particles slider__layer"
+              data-swiper-parallax="18%"
+              data-color="#C7696A"
+            ></canvas>
+            <div class="slider__logo_top">
+              <img src="img/wolfSchool.png" alt="wolfSchool" />
+            </div>
+            <div class="slider__logo_middle">
+              <img src="img/witcherLogo.png" alt="witcherLogo" />
+            </div>
+            <div class="slider__logo_bottom">
+              <p class="scroll__text">
+                Please, scroll to see more <span> >></span>
+              </p>
+            </div>
+          </div>
+        </div>
+
         <div class="swiper-slide slider__item">
           <div
             class="slider__layer"
@@ -92,6 +119,25 @@
             data-swiper-parallax="16%"
             style="background-image: url(img/screen-3/layer-front.png)"
           ></div>
+        </div>
+
+        <div class="swiper-slide slider__item">
+          <video
+            class="showcase__video"
+            src="videos/smoke-background-optimized.mp4"
+            loop
+            autoplay
+            muted
+            data-swiper-parallax="50%"
+          ></video>
+
+          <div class="slider__logo" data-swiper-parallax="50%">
+            <img
+              src="img/cdProjectRedLogo.png"
+              alt="cdProjectRedLogo"
+              class="cdproject__logo"
+            />
+          </div>
         </div>
       </div>
     </div>
